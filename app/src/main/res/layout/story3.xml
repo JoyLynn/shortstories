@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:touchscreenBlocksFocus="true">
 
-</LinearLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding="3dp"
+        tools:context=".MyCardActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_centerHorizontal="true"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image3" />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:fillViewport="true"
+                    android:layout_alignParentBottom="true"
+                    android:nestedScrollingEnabled="true"
+                    android:id="@+id/scrollView"
+                    android:layout_below="@+id/image">
+                    <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="It was, by this time, about nine in the morning, and the first fog of the season had come down, so that our cab crawled from street to street. The dismal quarter of Soho that we came to, where the fog swirled more densely than ever, and the street lamps were still lit, appeared to me like a district of some city in a nightmare.
+
+As the cab drew up before the address Hyde had given me at our brief, unpleasant meeting almost a year before, the fog lifted a little and showed a dingy street, with many ragged children huddled in doorways.
+
+So this was the home of Jekyll’s favorite, of a man who was heir to a quarter of a million pounds.
+
+The old woman who opened the door had a mean, pale face. “Yes, this is Mr. Hyde’s,” she said, “but he’s not at home.”
+
+He had, she told us, been in last night very late, but had gone away again in less than an hour. There was nothing strange in this, she said, he was a man of irregular habits and was often away for long periods. It was nearly two months since she had seen him till yesterday.
+
+When my companion informed the woman that he was Inspector Newcomen of Scotland Yard, a flash of odious joy appeared on her face.
+
+“Ah!” said she, “he’s in trouble then! What has he done?”
+
+Inspector Newcomen and I exchanged glances. “Hyde doesn’t seem a very popular character,” said Newcomen. “Now let us by to have a look round.”
+
+We entered the house of Edward Hyde. The housekeeper lived on the ground floor and Hyde used only a couple of rooms on the floor above. These were furnished with luxury and taste.
+
+A closet was filled with fine wines, he used only the best silverware, and the curtains were agreeable in color. A good picture hung upon one of the walls - a gift, I supposed, from Henry Jekyll who knew much about art.
+
+But however elegant the rooms, at this moment they bore every mark of having been recently and hurriedly ransacked. Clothes lay about the floor, drawers stood open, and on the hearth there lay a pile of grey ashes, as though many papers had been burned.
+
+And then, lying behind the door, we found the other half of the stick that had killed Sir Danvers, which Newcomen pounced upon with delight.
+
+“Proof, indeed, that Hyde’s our man! I have him, Mr. Utterson. He’ll not escape me now!"
+                        android:textSize="25sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+                </ScrollView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

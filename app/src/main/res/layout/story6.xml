@@ -1,6 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:touchscreenBlocksFocus="true">
 
-</LinearLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding="3dp"
+        tools:context=".MyCardActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_centerHorizontal="true"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image6" />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:fillViewport="true"
+                    android:layout_alignParentBottom="true"
+                    android:nestedScrollingEnabled="true"
+                    android:id="@+id/scrollView"
+                    android:layout_below="@+id/image">
+                    <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="It was late in the afternoon, by the time I found my way to Jekyll’s house. There, I was admitted by Poole, who escorted me through the kitchen and across the courtyard to what was known as the laboratory or the dissecting rooms.
+
+At the far end, a flight of stairs rose to the red door of Jekyll’s study, where I had never been before. The study was a large room, furnished with cabinets and a desk. A fire burned in the grate; a lighted lamp was set on the mantlepiece, for even in the houses the fog began to lie thickly. And there, close up to the warmth, sat Dr. Jekyll, looking deadly sick.
+
+He did not rise to meet me but held out a cold hand and bade me welcome in a changed voice.
+
+“And now,” I said, as soon as Poole had left us, “have you heard the news?”
+
+“They were crying it in the square,” replied Jekyll with a shudder. “I heard it from my dining room.”
+
+“Well,” I said, “Carew was my client, but so are you. I am in a difficult position and have to know what I’m doing. You haven’t been made enough to hide this fellow?”
+
+“Utterson, I swear,” cried the doctor, “after this I will never set eyes on Hyde again. I am done with him. It is all at an end. Indeed, he does not want my help; you do not know him as I do. And you may mark my words, he’ll never be heard of again.”
+
+“Well, I hope you’re right,” I said, “for your sake. If it came to a trial, your name might come up, and think of the scandal then.”
+
+“I’m quite sure of him,” replied Jekyll. “I have grounds for certainty that I cannot share with anyone. But there is one thing on which you might advise me, Utterson. I have - I have just received a letter, and I’m at a loss whether I should show it to the police. I would like to leave it in your hands. You would judge wisely, I am sure; I have great trust in you.”
+
+“You fear that it might lead to his detection?” I asked.
+
+“No,” replied Jekyll. “I don’t care what becomes of Hyde. I was thinking of my own character.”
+
+“Let me see the letter,” I said.
+
+Jekyll got up and went to his desk. He handed me the letter, which was written in an odd, upright hand. It read as follows:
+
+To Dr. Henry Jekyll, my great benefactor,
+       I have repaid your generosity very poorly. Do not fear for my safety. I have a means of escape on which I can depend. I bid you farewell. Think no more of me, Sir, I do not deserve your charity.
+
+        Your servant,
+                Edward Hyde
+
+“Have you the envelope?” I asked Jekyll.
+
+“I burned it,” replied Jekyll, “before I thought about it. But it bore no postmark. It was delivered by hand.”
+
+“I must give this some thought.” I slipped the letter into my pocket. “And now, at least, perhaps you can tell me about your Will. The wording of the thing - that everything should go to Hyde in the event of your ‘death or disappearance’ - was it Hyde who dictated that?”
+
+For a moment, Jekyll looked quite faint, then he shut his mouth tight and merely nodded.
+
+“I knew it,” I said. “He meant to murder you for your money, You’ve had a fine escape, Jekyll.”
+
+“I’ve had more than an escape,” the doctor replied solemnly. “I have learnt a severe lesson. Oh God, Utterson, what a lesson I’ve had!”
+
+And he covered his face with his hands.
+
+On the way out, I stopped for a word with Jekyll’s manservant.
+
+“Poole, I believe a letter was brought by a messenger earlier. Can you tell me anything about him? His looks, his manner?”
+
+Poole looked puzzled. “If there was a messenger, I didn’t see him, sir. And I know nothing of any letter.”
+
+I left the house. Outside, in the square, the news boys were shouting themselves hoarse.
+
+“Special Edition! Shocking murder of an MP!”
+
+I could not help my sudden fear that, following hard on the heels of the death of one friend and client, another was about to be ruined by scandal.
+
+Back at home, my chief clerk, Mr. Guest, joined me in a glass of fine old wine by the fireside.  Guest had been with me for many years. I trusted him completely and kept few secrets from him.
+It was in my mind to show him the letter Jekyll had given me and learn something of the writer, for Guest was a great student of handwriting and claimed to be able to tell much about a man from the slope and flourish of his hand.
+
+“This is a sad business about Sir Danvers,” I said to him.
+
+“It is indeed, sir,” he replied. “The murderer, of course, was quite mad.”
+
+“I should like to hear your views on that,” I said. “I have a letter here in his handwriting, This is between ourselves, for I don’t know what to do about it: it is an ugly business at best. But here, look it over, tell me what you think.”
+
+Guest’s eyes brightened, and he took the letter from me and studied it with passion. Very shortly he said, “No, sir, he’s not mad. But this is an odd hand.”
+
+Just then a servant entered with a note.
+
+“Is that from Dr. Jekyll, sir?” inquired Guest. “I thought I knew the writing. Anything private, Mr. Utterson?”
+
+“Only an invitation to dinner. Why? Do you want to see it?”
+
+“Just for a moment, thank you, sir.”
+
+Guest placed the invitation and the letter side by side. There was a long pause while he compared the two documents.
+
+“What is it?” I said at last, unable to contain myself.
+
+“Well, sir, there’s a great resemblance between the two hands. Indeed, in many points they are identical, only differently sloped.”
+
+My hand shook as I took the letter from him and folded it. “I’d rather you said nothing of this, Guest - to anyone.”
+
+“No, sir. I understand.”
+
+No sooner was I alone than I locked the letter in my safe. It seemed that Hyde’s note had not been written by him at all, but by Jekyll himself. So my old friend had come to this - forging documents for a murderer! My blood ran cold in my veins."
+                        android:textSize="25sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+                </ScrollView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,6 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:touchscreenBlocksFocus="true">
 
-</LinearLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding="3dp"
+        tools:context=".MyCardActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_centerHorizontal="true"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image1" />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:fillViewport="true"
+                    android:layout_alignParentBottom="true"
+                    android:nestedScrollingEnabled="true"
+                    android:id="@+id/scrollView"
+                    android:layout_below="@+id/image">
+                    <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The night after Lanyon’s funeral, I sat by the light of a melancholy candle turning over an envelope that had been delivered to me shortly after my friend’s death.
+
+“PRIVATE: For the eyes of G. J. Utterson ALONE,” the envelope read in Lanyon’s handwriting. “To be opened only upon the death or disappearance of Dr, Henry Jekyll.”
+
+That word again, “disappearance,” as in Jekyll’s mad Will. What could it mean?
+
+A great curiosity overcame me, but I could not disregard Lanyon’s wishes and placed the letter in my safe.
+
+One evening, after dinner, I received an unexpected visit from Jekyll’s butler, who looked frighteningly pale and distracted.
+
+“Bless me, Poole, what ails you? Is the doctor ill?”
+
+“I’m sorry to disturb you, sir,” he replied, “but I don’t know who else to turn to. There’s something wrong at the house. Something badly wrong.”
+
+I invited him to sit down, have a glass of wine and tell me what it was that worried him.
+
+“It’s the doctor, sir. He’s been shut up in his study across the courtyard for days, and I tell you plain, I’m mortally afraid. I believe there’s been foul play.”
+
+An icy hand settled on my heart. “Foul play? What kind of foul play?”
+
+“I daren’t say, sir,” was the answer, “but will you come along with me and see for yourself?”
+
+I went at once for my hat and coat, and we stepped outside.
+
+It was a wild, cold night, with a pale moon. The square, when we got there, was full of wind and dust, and the trees in the garden were lashing themselves along the railing.
+
+“Well, here we are, sir,” Poole said, his voice harsh and broken, “and may God grant there be nothing wrong after all.”
+
+He knocked on the door to Jekyll’s house.
+
+“Is that you, Poole?” a nervous voice asked from within.
+
+“It’s all right,” said Poole. “Open the door.”
+
+The hall, when we entered, was brightly lit, the fire was built high, and about the hearth all of the servants stood huddled together like a flock of sheep. At sight of me, the housemaid started crying, and the cook cried out, “Bless you for coming, Mr. Utterson, oh bless you, sir.”
+
+Poole ordered them to be silent, and took me through the house, into the courtyard. We passed through the laboratory, with its crates and bottles, and at the foot of the stairs to Jekyll’s study, he motioned me to remain there and listen hard, then mounted the steps and knocked on the red study door.
+
+“Mr. Utterson is here, sir,” he called, “and asking to see you.”
+
+A voice answered from wtihin, an odd, strangled voice: “Tell him I cannot see anyone.”
+
+“Thank you, sir,” said Poole. Taking his candle, he ledl me back across the yard into the great kitchen.
+
+“Mr. Utterson,” he said, “tell me plain - was that my master’s voice?”
+
+“It did seem ... much changed,” I replied cautiously.
+
+“Changed!” Poole cried. “Have I been twenty years in the doctor’s house not to know his voice? No, sir, it’s my belief that my master’s been done away with. And who’s in there instead of him, and why does it stay there?”
+
+“This is wild talk,” I said. “If Dr. Jekyll had been murdered, why would the murderer stay behind? No, no, that doesn’t make sense.”
+
+“You are a hard man to satisfy, sir,” said Poole, “but there’s more. All this last week he, or it, or whatever it is that lives in the study, has been crying out night and day for some sort of medicine. He leaves notes for me, sometimes two or three a day, asking for some sort of medicine, a kind of white salt. I’ve been sent to every chemist in town, sir. Every time I bring the stuff back there’s soon another note telling me to return it because it was not pure, and another order for a different firm. That drug is wanted very badly, sir, whatever its purpose.”
+
+“And you’ve not seen your master for some days?” I said.
+
+“Not until this afternoon, and it was that sight of him that drove me to you. I came suddenly into the laboratory from the garden. There he was, at the far end of the room, digging among the crates. When he saw me, he gave a cry like a startled rat, and flew past me and up the stairs into the study. I saw him but for a moment, sir, but I can tell you, the sight made the hair stand up on my head.”
+
+“But what was so frightening about him,” I asked.
+
+“Sir,” Poole said, and leaned towards me. “He wore a mask.”
+
+“A mask?”
+
+“Now I ask you, sir, if that was my master why would he cover his face? Why would he cry out at the sight of me - me, of all people - and scamper from me like a frightened animal?”
+
+“That is very strange behavior,” I agreed, “but perhaps there is an explanation. God forbid, but your master may have developed some disease that has altered the shape of his face and coarsened his voice. Hence the mask and his wish not to be seen, and his eagerness to find the drug that will cure him.”
+
+Poole turned pale. “Sir, that thing was not my master. Dr. Jekyll is a tall, fine build of a man, and this was more of a dwarf.”
+
+I began to protest. “Oh, sir,” cried Poole, “do you think I do not know my master after twenty years? God knows what that thing was, but it was never Dr. Jekyll. No, I stand by my claim that there was murder done.”
+
+“If you truly believe that,” I said, “it becomes my duty to make certain. We must get to the truth of this, even if it means breaking the door down.”
+
+Poole’s face flashed with excitement. “Now you’re talking, sir! There’s an axe in the laboratory. I’ll take that, and you might take the kitchen poker for yourself.”
+
+I seized the poker and balanced it in my hand. “And now comes the question,” I said. “Who is going to do it?”
+
+“Why, you and me, sir,” Poole replied.
+
+“Let us be plain about this, Poole. I believe that we both think more than we have said. This man you saw - in spite of the mask, did you recognize him?”
+
+“Well, sir, he went by so quick, and he was so doubled up that I could hardly swear to it, but if you mean was it Mr. Hyde, why yes, I think it was.”
+
+“My fear exactly,” I said. “Evil, I fear - evil was sure to come of that connection. And if it was Hyde you saw, I think you may be right and poor Harry has been killed, and his murderer still lurks up there in that room. Well, let our name be vengeance. Come! To work!”
+
+Again we went out into the yard. A cloud now stood across the moon, and the wind tossed the light of the candle to and fro, sending our shadows shivering about us. As I led the way up the stairs to Jekyll’s study, my heart thumped in fear of the evil that might await us behind that door.
+
+At the top of the stairs, we pressed our ears to the door, and heard an odd footfall moving slowly back and forth. “So he will walk all day,” Poole whispered, “aye, and the better part of the night. Here they come again, a little closer. Mr Utterson, tell me, is that the doctor’s foot?”
+
+The steps fell lightly, different indeed to the heavy creaking tread of Henry Jekyll.
+
+“Once, I heard him weeping!” said Poole.
+
+“Weeping?” I asked, feeling a sudden chill of horror.
+
+“Weeping, like a lost soul,” replied Poole. “A terrible sound. I came away with that upon my heart.”
+
+“Well, let’s get to the bottom of this,” I said, and cried out, “Jekyll, I demand to see you!” The footsteps stopped but there came no reply.
+
+“I give you fair warning,” I continued, “I must and shall see you. If not by fair means, then by foul - if not of your consent, then by brute force!”
+
+And then we heard it, a harsh, shrisking, pathetic voice. “Utterson, for God’s sake, have mercy!”
+
+“That’s not Jekyll’s voice - it’s Hyde’s! I cried. “Down with the door, Poole!”
+
+Poole swung the axe over his shoulder; the blow shook the building, and the door leaped against the lock and hinges. A dismal screech of animal terror rang from the study. Up went the axe again, and again it fell upon the sturdy panels. Four times the blow fell, but the wood was tough, the door well-made, and it was not until the fifth that the lock burst and the ruined door fell inwards.
+
+Then ... all was still. We stood in the doorway, and peered in. There lay the study in the quiet lamplight, a good fire glowing and chattering on the hearth, the kettle coming to the boil, papers neatly set out on the table, and nearer the fire, the things laid out for tea. The quietest room, you would have said, and, if it weren’t for the glazed presses full of chemicals, the most commonplace in London.
+
+Right in the middle of the room lay the body of a man sorely contorted and still twitching.
+
+Poole and I drew near on tiptoe, turned the body on its back, and beheld the face of Edward Hyde. He was dressed in clothes far too large for him; the muscles of his face still moved as if he were alive, but his life was quite gone. The crushed vial in his hand, and the strong odor that hung upon the air, told me that he had taken his own life.
+
+“We have come too late, either to save or punish,” I said to Poole. “Mr Hyde is dead. It only remains for us to find the body of your master.”
+
+Poole and I searched the study and adjoining rooms, but there was no trace of Jekyll, dead or alive. Upon a table in the study we found several small heaps of white salt on glass saucers, for some experiment that Jekyll must have been carrying out.
+
+“This looks like the salt I was always bringing him,” said Poole. As he spoke, the kettle boiled over with a startling noice.
+
+This brought us to the fireside, where an easy chair was drawn cosily up. We looked around some more and came to a looking glass, into whose depths we gazed with horror. It was turned to show us nothing but the rosy glow playing on the roof, the fire sparkling in a hundred repetitions along the glazed front of the presses, and our own pale faces stooping to look in.
+
+“This glass has seen some strange things,” whispered Poole.
+
+“And surely none stranger than itself,” I said. “For what did Jekyll want with it?”
+
+Next we turned to the desk. Among a neat array of papers, we found a large envelope bearing my name. It contained three enclosures. The first was a new Will, drawn-up by Jekyll in the same terms as its predecessor, except that in place of the name of Edward Hyde, I read, to my amazement, the name of Gabriel John Utterson.
+
+“My head goes round,” I said. “Hyde must have raged to see himself displaced, and yet he has not destroyed this new Will.”
+
+The next paper was a note from Jekyll with today’s date at the top. “Poole,” I cried, “he was alive and here today! Surely he can’t have been disposed of in so short a time. He must be still alive, he must have fled.”
+
+“Why don’t you read it, sir?” Poole said.
+
+“Because I am afraid,” I replied. “God grant I have no cause.” I then began to read:
+
+    My Dear Utterson,
+
+    When this falls into your hands I shall have disappeared, under what circumstances I cannot at this time foresee, but of one thing I am certain: the end is very near. Go now, and first read Lanyon’s letter, which he warned me would be placed in your hands following his death. Then, if you care to hear more, turn to the confession of
+    Your unworthy and unhappy friend,
+    Henry Jekyll.
+
+My hand fell on a bulky packet sealed in several places, which I put into my pocket.
+
+“I would say nothing of this document, Poole. If your master is dead, we may at least save his good name. It is now ten. I must go home and read these papers, but ai shall be back before midnight, when we’ll send for the police.”
+
+I trudged home with a heavy heart. In my business room I removed Lanyon’s letter from my safe and settled down to read first his narrative, then Jekyll’s, knowing, with dreaded certainty, that this mystery was at least to be explained."
+                        android:textSize="25sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+                </ScrollView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

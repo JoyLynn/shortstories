@@ -27,10 +27,10 @@ public class MainActivity extends ActionBarActivity {
         // Defined Array values to show in ListView
         String[] values = new String[]{"The fellow had a key - By Louis Stevenson",
                 "Dinasour before dark - By Jack and Annie",
-                "Mind your own business",
-                "Heaven on earth",
-                "The tale of 2 cities",
-                "Fist bump and Obama",
+                "Mr Hyde's house - By Edward Hyde",
+                "The Last Night - By G. J. Utterson",
+                "The Carew murder case - By Jekyll’s house",
+                "Incident of the letter - By Edward Hyde",
                 "Code school Journals",
                 "Holla at your boy"
         };
