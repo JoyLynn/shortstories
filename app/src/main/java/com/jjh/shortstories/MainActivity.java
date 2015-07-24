@@ -26,7 +26,7 @@ public class MainActivity extends ActionBarActivity {
 
         // Defined Array values to show in ListView
         String[] values = new String[]{"The fellow had a key - By Louis Stevenson",
-                "The Father of the winds",
+                "Dinasour before dark - By Jack and Annie",
                 "Mind your own business",
                 "Heaven on earth",
                 "The tale of 2 cities",
@@ -71,10 +71,40 @@ public class MainActivity extends ActionBarActivity {
                     startActivity(myIntent);
                 }
 
-//                if (position == 1) {
-//                    Intent myIntent = new Intent(getApplicationContext(), story2.class);
-//                    startActivity(myIntent);
-//                }
+                if (position == 1) {
+                    Intent myIntent = new Intent(getApplicationContext(), story2.class);
+                    startActivity(myIntent);
+                }
+
+                if (position == 2) {
+                    Intent myIntent = new Intent(getApplicationContext(), story3.class);
+                    startActivity(myIntent);
+                }
+
+                if (position == 3) {
+                    Intent myIntent = new Intent(getApplicationContext(), story4.class);
+                    startActivity(myIntent);
+                }
+
+                if (position == 4) {
+                    Intent myIntent = new Intent(getApplicationContext(), story5.class);
+                    startActivity(myIntent);
+                }
+
+                if (position == 5) {
+                    Intent myIntent = new Intent(getApplicationContext(), story6.class);
+                    startActivity(myIntent);
+                }
+
+                if (position == 6) {
+                    Intent myIntent = new Intent(getApplicationContext(), story7.class);
+                    startActivity(myIntent);
+                }
+
+                if (position == 7) {
+                    Intent myIntent = new Intent(getApplicationContext(), story8.class);
+                    startActivity(myIntent);
+                }
 
             }
 

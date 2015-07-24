@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:touchscreenBlocksFocus="true">
 
-</LinearLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding="3dp"
+        tools:context=".MyCardActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_centerHorizontal="true"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image2" />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:fillViewport="true"
+                    android:layout_alignParentBottom="true"
+                    android:nestedScrollingEnabled="true"
+                    android:id="@+id/scrollView"
+                    android:layout_below="@+id/image">
+                    <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="While walking in the woods close to their home in Frog Creek, Pennsylvania, siblings Jack and Annie come across a mysterious tree house filled with books. When Jack opens a book on dinosaurs and wishes that he could see a pteranodon for real, the tree house takes them back to the time of the dinosaurs.
+
+The two encounter a pteranodon and  Annie lovingly names it Henry -- as well as a triceratops and a colony of anatosauruses. Jack also discovers a strange medallion with the letter m engraved on it lying on the ground.
+
+When the siblings see a tyrannosaurus rex, they run back to the tree house -- but Jack realizes that he left his backpack and the dinosaur book down in the valley with the anatosauruses. Insisting that the book isn't his to lose, Jack runs back to get it, returning to find the T-rex blocking his path to the tree house. Annie sends Henry the pteranodon to save Jack, who climbs onto the dinosaur's back and is flown back to the tree house. He then finds a book about Pennsylvania and wishes to go there.
+
+The tree house returns them home, where they discover that no time has elapsed since they left. As they walk back to their house, Jack and Annie agree not to tell anyone about what happened, and make plans to return to the tree house tomorrow."
+                        android:textSize="25sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+                </ScrollView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

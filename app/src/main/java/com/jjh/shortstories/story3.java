@@ -1,3 +1,5 @@
+package com.jjh.shortstories;
+
 import com.jjh.shortstories.R;
 
 import android.os.Bundle;
