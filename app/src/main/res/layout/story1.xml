@@ -28,9 +28,9 @@
                 <ImageView
                     android:id="@+id/image"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="300dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/bonfire" />
+                    android:src="@drawable/image1" />
                 <ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -44,14 +44,24 @@
                         android:id="@+id/info_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Jack Daniel&apos;s is a brand of Tennessee whiskey and the highest selling American whiskey in the world.It is produced in Lynchburg, Tennessee, by the Jack Daniel Distillery, which has been owned by the Brown-Forman Corporation since 1956. Despite being the location of a major operational distillery, Jack Daniel&apos;s home county of Moore is a dry county, so the product is not available for consumption at stores or restaurants within the county. The product meets the regulatory criteria for classification as a straight bourbon, though the company disavows this classification and markets it simply as Tennessee whiskey rather than as Tennessee bourbon. As defined in the North American Free Trade Agreement, Tennessee Whiskey is classified as a straight bourbon authorized to be produced in the state of Tennessee. Packaged in distinctive square bottles, a total of 11 million cases of the flagship &quot;Black Label&quot; product were sold in the company&apos;s fiscal year ended April 30, 2013."
+                        android:text="Welcome to Victorian England where wealthy people, including single “gentlemen,” have lots of servants and London is becoming a city without equal. As headquarters of the British Empire, the town which Romans knew as Londinium has undergone a remarkable transformation.
+
+This story, however, is less about its setting and more about the transformation of a resident called Dr. Jekyll—a respectable man who has certain tendencies which could cause his undoing.
+
+Hereafter is an abridged version of the famous novella which Robert Louis Stevenson wrote in less than a week (after first destroying his original manuscript in a fit of anger).
+
+Stevenson tells his story in the third person, without a narrator, but Gabriel Utterson—the lawyer who appears in the book’s first paragraph—is the narrator of this abridgement. He helps to keep the shortened version—which mostly uses Stevenson’s words—to flow smoothly.
+
+The tale I am about to tell is one of terror and horror such as you may never have heard; a tale to make your flesh creep and your blood run cold.
+
+It is a tale of great foolishness and mad ambition, of terrible deeds, and of a creature from the very depths of Hades, who ...
+
+But I am ahead of myself. I must begin at the beginning."
                         android:textSize="25sp"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true" />
                 </ScrollView>
-
-
 
             </RelativeLayout>
         </android.support.v7.widget.CardView>

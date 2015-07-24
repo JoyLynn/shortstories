@@ -25,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
         listView = (ListView) findViewById(R.id.listView);
 
         // Defined Array values to show in ListView
-        String[] values = new String[]{"The 3 Legged Cat",
+        String[] values = new String[]{"The fellow had a key - By Louis Stevenson",
                 "The Father of the winds",
                 "Mind your own business",
                 "Heaven on earth",
