@@ -31,8 +31,8 @@ public class MainActivity extends ActionBarActivity {
                 "The Last Night - By G. J. Utterson",
                 "The Carew murder case - By Jekyll’s house",
                 "Incident of the letter - By Edward Hyde",
-                "Code school Journals",
-                "Holla at your boy"
+                "Dr Jekyll full statement - By Jekyll",
+                "Dr Layon's narrative - By Layon"
         };
 
         // Define a new Adapter

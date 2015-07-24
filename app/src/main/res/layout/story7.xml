@@ -1,6 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:touchscreenBlocksFocus="true">
 
-</LinearLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding="3dp"
+        tools:context=".MyCardActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_centerHorizontal="true"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image7" />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:fillViewport="true"
+                    android:layout_alignParentBottom="true"
+                    android:nestedScrollingEnabled="true"
+                    android:id="@+id/scrollView"
+                    android:layout_below="@+id/image">
+                    <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="So Jekyll and Hyde had been one and the same! A practical, methodical, well-meaning fellow all my life, I no longer knew what to make of anything. I felt my life to be quite ruined. With a trembling hand, I turned to Jekyll’s statement.
+
+Jekyll began with an account of his early years, telling how his worst fault had been an impatient love of pleasure, which he found hard to reconcile with the desire to carry his head high and appear grave in public. He had therefore concealed his pleasures; he had lived two lives.
+
+To friends such as Lanyon and I, he was a decent, honorable chap, but to others not of our acquaintance he was a gadabout, a rake, a rowdy fellow who loved excitement and would sally forth under cover of darkness and indulge in all manner of low acts not suited to a gentleman.
+
+“Both sides of me were in deadly earnest,” he wrote. “As the respectable doctor, I did not shirk my responsibilities and only ever sought to do good, while as the Jekyll of the night I was equally dedicated to the pursuit of pleasure. With every day I drew steadily nearer the truth: that man is not truly one, but truly two.
+
+“As I grew older, I began to daydream about the possibility of separating my two selves. If each, I told myself, could be housed in separate identities, life would be so much easier. The good could keep steadfastly to the responsible, steady path, the other could go his own way, delivered from the guilt and fear of disgrace of his more upright twin.
+
+“It chanced that my scientific studies suggested that such a miracle was possible, but I hesitated long before I put this theory to the test. I knew I risked death. The temptation of such a discovery at last overcame my alarm.
+
+“I persevered, until one accursed night I added to a prepared compound a large quantity of a particular salt purchased from a firm of wholesale chemists. I watched this new concoction boil and smoke in the glass and, when it had settled, with a strong glow of courage, I drank the potion.
+
+“A terrible agony followed, a grinding in the bones, a deadly nausea, and a horror of the spirit. But all this passed, and then I felt something strange with me, something quite new and incredibly sweet. I felt younger, lighter and quite wicked, ten times more wicked. I stretched out my hands, and saw hair growing thickly upon them. I ran to the mirror, in clothes suddenly too big for me, and saw - for the first time - the appearance of Edward Hyde.
+
+“The evil side to my nature was less robust and well-developed than the good. Hyde was smaller, slighter and younger than Jekyll. As good shone in the face of one, evil was written broadly and plainly on the face of the other and left an imprint of deformity and decay. And yet, when I looked upon that ugliness, I felt a leap of welcome. This, too, was myself.
+
+“I did not linger at the mirror. The second part of my experiment had yet to be attempted. I had to see if I had lost my identity completely, or if I could be changed back to my true self by taking the drug again. I swallowed a second daught and experienced the same agonies as before; but soon, to my considerable relief, I was my usual self. Now I had two characters and appearances. One was wholly evil, the other good old Henry Jekyll.”
+
+From that time forward, all Jekyll had to do to change from the famous professor into Edward Hyde was to mix the potion and drink it. He made preparations with great care. He took a house for Hydge in Soho, engaging a housekeeper to look after it. In addition, he told his servants that Hyde must be allowed to come and go as he pleased. He drew up the Will to which I so objected, so that if anything happened to him as Jekyll, he could inherit all his money as Hyde.
+
+In the hands of Edward Hyde, Jekyll’s pleasures became monstrous. But Jekyll let his conscience sleep. It was Hyde that was guilty. It was Hyde that trampled over the child in the street and ran on without a thought. And then:
+
+“Two months before the murder of Sir Danvers, a dreadful thing occurred. I woke with a start, feeling that something was wrong. I looked about me. Then I saw my hand on the bedcover. It was not at all like my broad smooth hand, but thin and knuckly, of a dusky pallor, and covered in thick hair. It was the hand of Edward Hyde.
+
+“Terror woke up in my breast. I bounded from my bed and rushed to the mirror. At the sight that met my eyes, my blood was changed into something very thin and icy. I had gone to bed as Henry Jekyll and awakened as Edward Hyde - without taking the drug! How was this to be explained?
+
+“I crept through the house and to my study, where I mixed my potion and once again became myself. At breakfast, I began to reflect more seriously on my double existence. I spied a danger that the balance of my nature might be permanently overthrown. I would lose the power to change voluntarily and become, forever, Edward Hyde.
+
+“I was slowly losing hold of my original and better self, and was becoming my second and worse. Between the two, I felt I had to choose. As so many do, I chose the better part and lacked the strength to keep it.
+
+“Yes, I preferred the elderly and discontented doctor, surrounded by friends, and cherishing honest hopes. I bade farewell to the liberty, the comparative youth, the secret pleasures I had enjoyed in the disguise of Hyde.”
+
+Jekyll resolved never again to take the drug, though he did not destroy Hyde’s clothes or give up the Soho house.
+
+For two full months, Jekyll held to his resolve. But time lessened his alarm, and he began to be tortured with longing, as though Hyde were struggling for freedom. At last, in an hour of weakness, Jekyll once again made and swallowed the potion.
+
+“My devil had been long caged, and came out roaring. It was on this night that I encountered the unfortunate Carew. That amiable gentleman had merely stopped to pass the time, but I was in no mood for idle chatter. I struck him down and mauled the unresisting body, tasting delight with every blow. It was not till I had begun to weary, that I was suddenly struck through the heart by a cold thrill of terror.
+
+“A mist cleared, and I realized that my life would be over if the crime were ever laid at my door. I ran to my house in Soho and removed all evidence of Hyde’s link with Jekyll (overlooking the top half of the broken cane). Then I set out through the lamplit streets, gloating on my crime.
+
+“Hyde had a song upon his lips as he mixed the potion and raised the glass in toast to his victim. The pangs of transformation had not finished tearing him, before Henry Jekyll fell to his knees in remorse and horror for the night’s misdeeds. I tried with tears and prayers to smother the crowd of hideous images and sounds with which my memory swarmed.
+
+“Then ... tears of gratitude fell from my eyes. I realized that Hyde could never be again. I was confined to the better part of my existence, and how I rejoiced! I locked the door by which Hyde had come and gone, and ground the key under my heel!”
+
+The next day Jekyll heard that the crime had been witnessed, and the murderer was identified as Edward Hyde. Jekyll was safe, but if Hyde peeped out from an instant, the hands of all men would be raised to slay him.
+
+Months passed, and Jekyll tried to make up for his crimes, working for the sick, renewing lapsed friendships, enjoying the safety and predictability of ordinary life more than ever.
+
+But it was not to last:
+
+“One fine clear January day I sat quietly on a bench in Regent’s Park, thinking how much better I now was than other men. At that moment, a horrible nausea came over me, a deadly shuddering. These sensations passed away and left me faint but, as the faintness too subsided, I became aware of a change in my way of thinking, a greater boldness, a contempt of danger.
+
+“I looked down. My clothes hung formlessly on my shrunken limbs. The hand on my knee was corded and hairy. A moment before, I had been wealthy and beloved; and now I was hunted, houseless, a known murderer!
+
+“My reason wavered, but it did not fail me entirely. Hyde rose to the occasion. I could not change back to Jekyll without my potion, but I no longer had a key for the back door - and I could hardly enter by the front as Hyde, for Poole would alert the police. I needed help, and thought of Lanyon.
+
+“I went to a small hotel. Hyde in danger of his life was a new creature to me: shaken with anger, lusting to inflict pain. Yet he mastered his fury and wrote two notes, one to Lanyon, the other to Poole, instructing them about the drawer.
+
+“Then he sat all day in a private room, gnawing his nails, along with his fears. At nightfall, he set forth in a closed cab and drove about the streets of London. He, I say - I cannot write of him as I. That child of Hades had nothing human; nothing lived in him but fear and hatred.
+
+“And when, at last, the driver had begun to grow suspicious, Hyde set out on foot in his misfitting clothes. He walked fast, hunted by the fears, chattering to himself, skulking through the less frequented streets, counting the minutes until midnight when it was time to go to Lanyon’s.”
+
+Once there, he took the potion and changed back into Jekyll - a sight which was to cost Lanyon his life.
+
+“When I came to myself at Lanyon’s, the horror of my old friend affected me somewhat. A change had come over me. I was no longer afraid of the scaffold; it was the horror of being Hyde that tortured me!”
+
+From that night onward, Jekyll was never safe. It was only under the immediate effect of the drug, or even a double dose of the drug, that he could remain Jekyll. At any hour, he might become Hyde with barely a shudder’s warning - the pangs of transformation were daily less marked.
+
+If he went to bed, or even dozed in his chair, he would awake as that evil being, eager to be off to commit some new atrocity. As Jekyll grew weak from trying not to sleep, a creature eaten up and emptied by fever, the powers of Hyde seemed to grow.
+
+“And then my original supply of the salt that changed me to and from Hyde began to run low. I sent out for more, but it did not have the right effect. Each time Poole returned with a new powder, the result was the same: it made ne ill but did not change me. I was forced to conclude that my first supply had not been pure, and that it was that unknown impurity which was the vital ingredient.
+
+“I finish this statement under the influence of the last of the old powders. This, then, is the last time that Henry Jekyll can think his own thoughts or see his own face in the glass. Nor must I delay too long to finish this, for if Hyde found it he would tear it to pieces.  Half an hour from now, when I shall again become that hated personality, and this time forever, all will be lost.
+
+“Will Hyde die upon the scaffold? Or will he find the courage to commit suicide? God knows; I do not care. This is my true hour of death, and what follows concerns another than myself.
+"
+                        android:textSize="25sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+                </ScrollView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
