@@ -79,14 +79,6 @@ public class MainActivity extends ActionBarActivity {
             }
 
         });
-//        listView.OnItemClickListener(new AdapterView.OnItemClickListener() {
-//            public void onItemClick(AdapterView<?> arg 0, View v, int position, long id) {
-//                if (position == 0) {
-//                    Intent myIntent = new Intent(getApplicationContext(), story1.class);
-//                    startActivity(myIntent);
-//                }
-//            }
-//        });
 
     }
 }
